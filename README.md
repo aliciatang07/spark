@@ -1,4 +1,4 @@
-# Apache Spark
+# Apache Spark WITH RING ALLREDUCE AND DIVIDE AND CONQUER BARRIER SCHEDULING 
 
 Spark is a unified analytics engine for large-scale data processing. It provides
 high-level APIs in Scala, Java, Python, and R, and an optimized engine that
@@ -35,25 +35,6 @@ More detailed documentation is available from the project site, at
 
 For general development tips, including info on developing Spark using an IDE, see ["Useful Developer Tools"](https://spark.apache.org/developer-tools.html).
 
-## Interactive Scala Shell
-
-The easiest way to start using Spark is through the Scala shell:
-
-    ./bin/spark-shell
-
-Try the following command, which should return 1,000,000,000:
-
-    scala> spark.range(1000 * 1000 * 1000).count()
-
-## Interactive Python Shell
-
-Alternatively, if you prefer Python, you can use the Python shell:
-
-    ./bin/pyspark
-
-And run the following command, which should also return 1,000,000,000:
-
-    >>> spark.range(1000 * 1000 * 1000).count()
 
 ## Example Programs
 
@@ -86,24 +67,3 @@ Please see the guidance on how to
 [run tests for a module, or individual tests](https://spark.apache.org/developer-tools.html#individual-tests).
 
 There is also a Kubernetes integration test, see resource-managers/kubernetes/integration-tests/README.md
-
-## A Note About Hadoop Versions
-
-Spark uses the Hadoop core library to talk to HDFS and other Hadoop-supported
-storage systems. Because the protocols have changed in different versions of
-Hadoop, you must build Spark against the same version that your cluster runs.
-
-Please refer to the build documentation at
-["Specifying the Hadoop Version and Enabling YARN"](https://spark.apache.org/docs/latest/building-spark.html#specifying-the-hadoop-version-and-enabling-yarn)
-for detailed guidance on building for a particular distribution of Hadoop, including
-building for particular Hive and Hive Thriftserver distributions.
-
-## Configuration
-
-Please refer to the [Configuration Guide](https://spark.apache.org/docs/latest/configuration.html)
-in the online documentation for an overview on how to configure Spark.
-
-## Contributing
-
-Please review the [Contribution to Spark guide](https://spark.apache.org/contributing.html)
-for information on how to get started contributing to the project.
