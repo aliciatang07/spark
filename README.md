@@ -1,4 +1,4 @@
-# Apache Spark WITH RING ALLREDUCE AND DIVIDE AND CONQUER BARRIER SCHEDULING 
+# Apache Spark With Ring Allreduce And Divide And Conquer Barrier Scheduling 
 
 Spark is a unified analytics engine for large-scale data processing. It provides
 high-level APIs in Scala, Java, Python, and R, and an optimized engine that
